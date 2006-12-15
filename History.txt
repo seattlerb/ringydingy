@@ -1,0 +1,22 @@
+= 1.2.1
+
+* Don't allow $TESTING to be true if we're not testing.
+
+= 1.2.0
+
+* Split RingyDingy::RingServer::list into ::list_services and
+  ::print_services for reuse.
+* Services without the default name no longer reregister multiple times
+
+= 1.1.0
+
+* Added ring_server executable (Rinda::RingServer wrapper)
+  * Daemon mode
+  * Rinda::RingServer service listing
+  * Remote verbose mode enable-disable
+* Switched to Hoe
+
+= 1.0.0
+
+Birthday!
+
