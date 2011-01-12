@@ -1,27 +1,21 @@
 = RingyDingy
 
+* http://rubyforge.org/projects/seattlerb
+
+== DESCRIPTION
+
 RingyDingy is a little boat that keeps your DRb service afloat!
+RingyDingy automatically registers a service with a RingServer. If
+communication between the RingServer and the RingyDingy is lost,
+RingyDingy will re-register its service with the RingServer when it
+reappears.
 
-Rubyforge Project:
+Similarly, the RingServer will automatically drop registrations by a
+RingyDingy that it can't communicate with after a short timeout.
 
-http://rubyforge.org/projects/seattlerb
-
-Documentation:
-
-ri RingyDingy
-
-== About
-
-RingyDingy automatically registers a service with a RingServer.  If
-communication between the RingServer and the RingyDingy is lost, RingyDingy
-will re-register its service with the RingServer when it reappears.
-
-Similarly, the RingServer will automatically drop registrations by a RingyDingy
-that it can't communicate with after a short timeout.
-
-RingyDingy also includes a RingServer wrapper that adds verbose mode to see
-what services as they register and expire and an option to list all available
-services on the network.
+RingyDingy also includes a RingServer wrapper that adds verbose mode
+to see what services as they register and expire and an option to list
+all available services on the network.
 
 == Installing RingyDingy
 
